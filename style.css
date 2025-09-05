@@ -1,198 +1,247 @@
 @font-face {
-    font-family: 'efootball-stencil-regular';
-    src: url('./fonts/efootball-stencil-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "efootball-stencil-regular";
+  src: url("./fonts/efootball-stencil-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    background-color: gold;
-    font-size: 0px;
-    margin: 0px;
+  background-color: gold;
+  font-size: 0rem;
+  margin: 0px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
 }
 
 #cover {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #LatestSquad {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-
-
 .playerCard {
-    z-index: 0;
-    position: relative;
-    display: inline-block;
-    width: 240px;
-    height: 339px;
-    background-color: blueviolet;
-    border: 10px solid gold;
-    margin: 10px;
+  z-index: 0;
+  position: relative;
+  display: inline-block;
+  width: 240px;
+  height: 339px;
+  background-color: blueviolet;
+  border: 10px solid gold;
+  margin: 10px;
 }
 
 .playerCard:hover {
-    border-top: 10px solid white;
-    border-right: 10px solid gray;
-    border-left: 10px solid gray;
-    border-bottom: 10px solid black;
+  border-top: 10px solid white;
+  border-right: 10px solid gray;
+  border-left: 10px solid gray;
+  border-bottom: 10px solid black;
 }
 
 .playerCard:focus {
-    border-top: 10px solid white;
-    border-right: 10px solid gray;
-    border-left: 10px solid gray;
-    border-bottom: 10px solid black;
+  border-top: 10px solid white;
+  border-right: 10px solid gray;
+  border-left: 10px solid gray;
+  border-bottom: 10px solid black;
 }
 
 .playerCard:active {
-    border-top: 10px solid black;
-    border-right: 10px solid gray;
-    border-left: 10px solid gray;
-    border-bottom: 10px solid white;
+  border-top: 10px solid black;
+  border-right: 10px solid gray;
+  border-left: 10px solid gray;
+  border-bottom: 10px solid white;
 }
-
-
 
 #cards div img {
-    display: block;
-    position: absolute;
-    z-index: 1;
+  display: block;
+  position: absolute;
+  z-index: 1;
 }
-
-
 
 .ratingDivs {
-    left: 12px;
-    height: 55.2px;
-    width: 59.125px;
-    display: block;
-    position: absolute;
-    top: -2px;
-    z-index: 3;
-    font-family: 'efootball-stencil-regular', sans-serif;
-    font-size: 42px;
-    color: white;
-    text-align: center;
+  left: 12px;
+  height: 55.2px;
+  width: 59.125px;
+  display: block;
+  position: absolute;
+  top: -2px;
+  z-index: 3;
+  font-family: "efootball-stencil-regular", sans-serif;
+  font-size: 42px;
+  color: white;
+  text-align: center;
 }
 
-
-
 .positionDivs {
-    left: 12px;
-    height: 55.2px;
-    width: 64.66px;
-    display: block;
-    position: absolute;
-    top: 41px;
-    z-index: 3;
-    font-family: 'efootball-stencil-regular', sans-serif;
-    font-size: 30px;
-    color: white;
-    text-align: center;
+  left: 12px;
+  height: 55.2px;
+  width: 64.66px;
+  display: block;
+  position: absolute;
+  top: 41px;
+  z-index: 3;
+  font-family: "efootball-stencil-regular", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
 }
 
 .nameDivs {
-    display: block;
-    position: absolute;
-    width: 100%;
-    bottom: 115px;
-    z-index: 3;
-    font-family: 'efootball-stencil-regular', sans-serif;
-    font-size: 25px;
-    color: white;
-    text-align: center;
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 115px;
+  z-index: 3;
+  font-family: "efootball-stencil-regular", sans-serif;
+  font-size: 25px;
+  color: white;
+  text-align: center;
 }
 
 .nameSpans {
-    display: block;
-    position: absolute;
-    width: 100%;
+  display: block;
+  position: absolute;
+  width: 100%;
 }
 
 #nav {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    position: relative;
-    display: block;
-    z-index: 10;
-    width: 100%;
-    height: 70px;
-    font-size: 0px;
-    /*IMP*/
-
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+  font-size: 0px;
+  /*IMP*/
 }
 
-
 .navDiv {
-    position: relative;
-    display: inline-block;
-    width: 25%;
-    height: 70px;
-    border: 6px solid rgba(145, 255, 0.627);
-    box-sizing: border-box;
-    background-color: rgba(145, 255, 0.627);
-    font-family: 'efootball-stencil-regular', sans-serif;
-    font-size: 27px;
-    color: black;
-    text-align: center;
-
-
-
+  position: relative;
+  display: inline-block;
+  width: 25%;
+  height: 70px;
+  border: 6px solid rgba(145, 255, 0.627);
+  box-sizing: border-box;
+  background-color: rgba(145, 255, 0.627);
+  font-family: "efootball-stencil-regular", sans-serif;
+  font-size: 1.6rem;
+  color: black;
+  text-align: center;
 }
 
 .navDiv:hover {
-    color: black;
-    border-top: 6px solid white;
-    border-right: 6px solid gray;
-    border-left: 6px solid gray;
-    border-bottom: 6px solid black;
-    font-size: 30px;
-    vertical-align: middle;
-    line-height: 120%;
+  color: black;
+  border-top: 6px solid white;
+  border-right: 6px solid gray;
+  border-left: 6px solid gray;
+  border-bottom: 6px solid black;
+  font-size: 2rem;
+  vertical-align: middle;
+  line-height: 100%;
 }
 
 .navDiv:focus {
-    color: black;
-    border-top: 6px solid white;
-    border-right: 6px solid gray;
-    border-left: 6px solid gray;
-    border-bottom: 6px solid black;
+  color: black;
+  border-top: 6px solid white;
+  border-right: 6px solid gray;
+  border-left: 6px solid gray;
+  border-bottom: 6px solid black;
 }
 
 .navDiv:active {
-    color: white;
-    border-top: 6px solid black;
-    border-right: 6px solid gray;
-    border-left: 6px solid gray;
-    border-bottom: 6px solid white;
-    font-size: 25px;
-    vertical-align: middle;
-    line-height: 160%;
+  color: white;
+  border-top: 6px solid black;
+  border-right: 6px solid gray;
+  border-left: 6px solid gray;
+  border-bottom: 6px solid white;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  line-height: 160%;
 }
 
-
 .navSpan {
-    position: relative;
-    text-align: center;
-    /*line-height: 70px; */
+  position: relative;
+  text-align: center;
+  /*line-height: 70px; */
 
-    vertical-align: middle;
-    /*IMP*/
+  vertical-align: middle;
+  /*IMP*/
+}
+
+#footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 300px;
+  font-size: 0px;
+  /*IMP*/
 }
 
 #footerDiv {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 300px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  border: 6px solid rgba(145, 255, 0.627);
+  box-sizing: border-box;
+  background-color: rgba(145, 255, 0.627);
+  font-family: "efootball-stencil-regular", sans-serif;
+  font-size: 1.6rem;
+  color: black;
+  text-align: center;
+}
+
+#footerDiv:hover {
+  color: black;
+  border-top: 6px solid white;
+  border-right: 10px solid gray;
+  border-left: 10px solid gray;
+  border-bottom: 6px solid black;
+  font-size: 2rem;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+#footerDiv:focus {
+  color: black;
+  border-top: 6px solid white;
+  border-right: 10px solid gray;
+  border-left: 10px solid gray;
+  border-bottom: 6px solid black;
+}
+
+#footerDiv:active {
+  color: white;
+  border-top: 6px solid black;
+  border-right: 10px solid gray;
+  border-left: 10px solid gray;
+  border-bottom: 6px solid white;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  line-height: 160%;
+}
+
+#footerSpan {
+  position: relative;
+  text-align: center;
+
+  /*line-height: 70px; */
+
+  vertical-align: middle; /*IMP*/
 }
