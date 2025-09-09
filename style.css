@@ -131,8 +131,10 @@ a {
   position: relative;
   display: inline-block;
   width: 25%;
-  padding-block-end: 0.7rem; /*IMP* to set text in the middle vertically!*/
-  line-height: 2rem; /*IMP* to set text in the middle vertically!*/
+  padding-block-end: 0.7rem;
+  /*IMP* to set text in the middle vertically!*/
+  line-height: 2rem;
+  /*IMP* to set text in the middle vertically!*/
   box-sizing: border-box;
   border: 6px solid rgba(145, 255, 0.627);
   background-color: rgba(145, 255, 0.627);
@@ -161,15 +163,19 @@ a {
   border-left: 6px solid gray;
   border-bottom: 6px solid white;
   font-size: 1.2rem;
-  padding-block-end: 0.7rem; /*IMP* to set text in the middle vertically!*/
-  line-height: 2rem; /*IMP* to set text in the middle vertically!*/
+  padding-block-end: 0.7rem;
+  /*IMP* to set text in the middle vertically!*/
+  line-height: 2rem;
+  /*IMP* to set text in the middle vertically!*/
 }
 
 .navSpan {
   position: relative;
   text-align: center;
-  vertical-align: middle; /*IMP* to set text in the middle vertically!*/
-  padding-block: 0rem; /*IMP* to set text in the middle vertically!*/
+  vertical-align: middle;
+  /*IMP* to set text in the middle vertically!*/
+  padding-block: 0rem;
+  /*IMP* to set text in the middle vertically!*/
 }
 
 #footer {
@@ -185,10 +191,14 @@ a {
 
 #footerDiv {
   position: relative;
-  display: flex; /*IMP* to set text in the middle vertically!*/
-  align-items: center; /*IMP* to set text in the middle vertically!*/
-  flex-flow: row; /*IMP* to set text in the middle vertically!*/
-  justify-content: center; /*IMP* to set text in the middle vertically!*/
+  display: flex;
+  /*IMP* to set text in the middle vertically!*/
+  align-items: center;
+  /*IMP* to set text in the middle vertically!*/
+  flex-flow: row;
+  /*IMP* to set text in the middle vertically!*/
+  justify-content: center;
+  /*IMP* to set text in the middle vertically!*/
   width: 100%;
   block-size: 5rem;
   border: 6px solid rgba(145, 255, 0.627);
@@ -224,5 +234,52 @@ a {
   position: relative;
   text-align: center;
   /*line-height: 70px; */
-  vertical-align: middle; /*IMP*/
+  vertical-align: middle;
+  /*IMP*/
 }
+
+.heading {
+  font-family: "efootball-stencil-regular", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-block: 0rem;
+}
+
+#latestSquad {
+  display: block;
+  position: relative;
+}
+
+.manager {
+  top: 110.8px;
+  left: 76px;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  background-color: transparent;
+  inline-size: 7.51rem;
+  block-size: 7.51rem;
+}
+
+.manager:hover,
+.manager:focus-visible {
+  top: 104.8px;
+  left: 70px;
+  border-top: 6px solid white;
+  border-right: 6px solid gray;
+  border-bottom: 6px solid black;
+  border-left: 6px solid gray;
+}
+
+.manager:active {
+  top: 104.8px;
+  left: 70px;
+  border-top: 6px solid black;
+  border-right: 6px solid gray;
+  border-bottom: 6px solid white;
+  border-left: 6px solid gray;
+}
+
+
+
+
