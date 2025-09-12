@@ -8,7 +8,8 @@
 body {
   background-color: gold;
   font-size: 0rem;
-  margin: 0px;
+  font-family: "efootball-stencil-regular", sans-serif;
+  margin: 5px;
 }
 
 a {
@@ -19,19 +20,14 @@ a {
 
 #cover {
   display: block;
+  position: relative;
   width: 100%;
   height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-#LatestSquad {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 
 .playerCard {
   z-index: 0;
@@ -41,28 +37,25 @@ a {
   height: 339px;
   background-color: blueviolet;
   border: 10px solid gold;
-  margin: 0px;
 }
 
-.playerCard:hover {
-  border-top: 10px solid white;
-  border-right: 10px solid gray;
-  border-left: 10px solid gray;
-  border-bottom: 10px solid black;
-}
-
-.playerCard:focus {
-  border-top: 10px solid white;
-  border-right: 10px solid gray;
-  border-left: 10px solid gray;
-  border-bottom: 10px solid black;
+.playerCard:hover,
+.playerCard:focus-visible {
+  border: 10px;
+  border-style: solid;
+  border-top-color: rgb(255, 239, 148);
+  border-bottom-color: rgb(110, 94, 0);
+  border-right-color: goldenrod;
+  border-left-color: goldenrod;
 }
 
 .playerCard:active {
-  border-top: 10px solid black;
-  border-right: 10px solid gray;
-  border-left: 10px solid gray;
-  border-bottom: 10px solid white;
+  border: 10px;
+  border-style: solid;
+  border-top-color: rgb(110, 94, 0);
+  border-bottom-color: rgb(255, 239, 148);
+  border-right-color: goldenrod;
+  border-left-color: goldenrod;
 }
 
 #cards div img {
@@ -117,66 +110,70 @@ a {
   width: 100%;
 }
 
+
+/*Navigation Bar*/
 #nav {
   margin-top: 10px;
   margin-bottom: 10px;
+  padding: 5px;
   position: relative;
   display: block;
   z-index: 10;
+  font-family: inherit;
   font-size: 0px;
   /*IMP*/
+  border: 1px solid goldenrod;
 }
 
+
 .navDiv {
-  position: relative;
+  font-size: 1.4rem;
   display: inline-block;
-  width: 25%;
-  padding-block-end: 0.7rem;
-  /*IMP* to set text in the middle vertically!*/
-  line-height: 2rem;
-  /*IMP* to set text in the middle vertically!*/
+  position: relative;
+  inline-size: 25%;
+  height: max-content;
+  /*IMP*/
+  vertical-align: text-top;
+  /*IMP*/
+  border: 10px solid gold;
   box-sizing: border-box;
-  border: 6px solid rgba(145, 255, 0.627);
-  background-color: rgba(145, 255, 0.627);
-  font-family: "efootball-stencil-regular", sans-serif;
-  font-size: 1.3rem;
-  color: black;
-  text-align: center;
-  vertical-align: middle;
+
+
 }
 
 .navDiv:hover,
 .navDiv:focus-visible {
-  color: black;
-  box-sizing: border-box;
-  border-top: 6px solid white;
-  border-right: 6px solid gray;
-  border-left: 6px solid gray;
-  border-bottom: 6px solid black;
-  font-size: 1.5rem;
+  border: 10px;
+  border-style: solid;
+  border-top-color: rgb(255, 239, 148);
+  border-bottom-color: rgb(110, 94, 0);
+  border-right-color: goldenrod;
+  border-left-color: goldenrod;
+  background-color: rgb(255, 230, 0);
+  font-size: 1.6rem;
 }
 
 .navDiv:active {
-  color: white;
-  border-top: 6px solid black;
-  border-right: 6px solid gray;
-  border-left: 6px solid gray;
-  border-bottom: 6px solid white;
+  border: 10px;
+  border-style: solid;
+  border-top-color: rgb(110, 94, 0);
+  border-bottom-color: rgb(255, 239, 148);
+  border-right-color: goldenrod;
+  border-left-color: goldenrod;
+  background-color: gold;
   font-size: 1.2rem;
-  padding-block-end: 0.7rem;
-  /*IMP* to set text in the middle vertically!*/
-  line-height: 2rem;
-  /*IMP* to set text in the middle vertically!*/
 }
 
 .navSpan {
+  display: block;
   position: relative;
   text-align: center;
-  vertical-align: middle;
-  /*IMP* to set text in the middle vertically!*/
-  padding-block: 0rem;
-  /*IMP* to set text in the middle vertically!*/
+  padding: 0.5rem;
+
+  line-height: 1.5rem;
+  /*IMP*/
 }
+
 
 #footer {
   margin-top: 10px;
@@ -184,59 +181,99 @@ a {
   position: relative;
   display: block;
   width: 100%;
-  height: 300px;
   font-size: 0px;
   /*IMP*/
+  border: 1px solid lawngreen;
+  padding: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#footerDivOuter {
+  border: 1px solid goldenrod;
+  padding: 5px;
 }
 
 #footerDiv {
+  font-size: 1.4rem;
+  display: block;
+  position: relative;
+  height: max-content;
+  /*IMP*/
+  width: 100%;
+  border: 10px solid gold;
+  box-sizing: border-box;
+  /*IMP*/
+
+
+  /*
   position: relative;
   display: flex;
-  /*IMP* to set text in the middle vertically!*/
+  IMP* to set text in the middle vertically!
+
   align-items: center;
-  /*IMP* to set text in the middle vertically!*/
+  IMP* to set text in the middle vertically!
+
   flex-flow: row;
-  /*IMP* to set text in the middle vertically!*/
+  IMP* to set text in the middle vertically!
+
   justify-content: center;
-  /*IMP* to set text in the middle vertically!*/
-  width: 100%;
-  block-size: 5rem;
-  border: 6px solid rgba(145, 255, 0.627);
-  box-sizing: border-box;
-  background-color: rgba(145, 255, 0.627);
-  font-family: "efootball-stencil-regular", sans-serif;
-  font-size: 1.6rem;
-  color: black;
+  IMP to set text in the middle vertically! */
 }
 
 #footerDiv:hover,
 #footerDiv:focus-visible {
-  color: black;
-  border-top: 6px solid white;
-  border-right: 10px solid gray;
-  border-left: 10px solid gray;
-  border-bottom: 6px solid black;
-  font-size: 1.8rem;
-  vertical-align: middle;
+  border: 10px;
+  border-style: solid;
+  border-top-color: rgb(255, 239, 148);
+  border-bottom-color: rgb(110, 94, 0);
+  border-right-color: goldenrod;
+  border-left-color: goldenrod;
+  background-color: rgb(255, 230, 0);
+  font-size: 1.6rem;
 }
 
 #footerDiv:active {
-  color: white;
-  border-top: 6px solid black;
-  border-right: 10px solid gray;
-  border-left: 10px solid gray;
-  border-bottom: 6px solid white;
-  font-size: 1.5rem;
-  vertical-align: middle;
+  border: 10px;
+  border-style: solid;
+  border-top-color: rgb(110, 94, 0);
+  border-bottom-color: rgb(255, 239, 148);
+  border-right-color: goldenrod;
+  border-left-color: goldenrod;
+  background-color: gold;
+  font-size: 1.2rem;
 }
 
 #footerSpan {
+  display: inline-block;
   position: relative;
   text-align: center;
-  /*line-height: 70px; */
-  vertical-align: middle;
+  padding: 0.5rem;
+
+  line-height: 1.5rem;
   /*IMP*/
+
 }
+
+#footerDiv2 {
+  block-size: 10rem;
+}
+
+/* Back To Top */
+#Top {
+  bottom: 0rem;
+  right: 0rem;
+  position: fixed;
+  z-index: 11;
+  display: inline-block;
+  font-size: 1.5rem;
+  border: 2px solid black;
+  border-radius: 0.5rem;
+  line-height: 1.5rem;
+  padding-inline: 0.4rem;
+  padding-block-end: 0.5rem;
+}
+
 
 .heading {
   font-family: "efootball-stencil-regular", sans-serif;
@@ -245,41 +282,51 @@ a {
   padding-block: 0rem;
 }
 
-#latestSquad {
+.latestSquadDiv {
   display: block;
   position: relative;
+  margin-block: 10px;
+}
+
+.latestSquadPic {
+  inline-size: 100%;
 }
 
 .manager {
-  top: 110.8px;
-  left: 76px;
+  top: 15.45%;
+  left: 6%;
   position: absolute;
   display: block;
   z-index: 1;
   background-color: transparent;
-  inline-size: 7.51rem;
-  block-size: 7.51rem;
+  inline-size: 9.3%;
+  block-size: 16.6%;
+  box-sizing: content-box
 }
 
 .manager:hover,
 .manager:focus-visible {
-  top: 104.8px;
-  left: 70px;
-  border-top: 6px solid white;
-  border-right: 6px solid gray;
-  border-bottom: 6px solid black;
-  border-left: 6px solid gray;
+  top: calc(15.45% - 6px);
+  left: calc(6% - 6px);
+
+  border: 6px;
+  border-style: solid;
+  border-top-color: rgb(255, 239, 148);
+  border-bottom-color: rgb(110, 94, 0);
+  border-right-color: goldenrod;
+  border-left-color: goldenrod;
+
 }
 
 .manager:active {
-  top: 104.8px;
-  left: 70px;
-  border-top: 6px solid black;
-  border-right: 6px solid gray;
-  border-bottom: 6px solid white;
-  border-left: 6px solid gray;
+  top: calc(15.45% - 6px);
+  left: calc(6% - 6px);
+
+  border: 6px;
+  border-style: solid;
+  border-top-color: rgb(110, 94, 0);
+  border-bottom-color: rgb(255, 239, 148);
+  border-right-color: goldenrod;
+  border-left-color: goldenrod;
+  background-color: rgba(0, 0, 0, 0.6);
 }
-
-
-
-
