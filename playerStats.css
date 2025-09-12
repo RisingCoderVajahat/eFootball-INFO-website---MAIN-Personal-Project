@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "efootball-stencil-regular";
+    src: url("./fonts/efootball-stencil-regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: gold;
+    font-size: 0rem;
+    font-family: "efootball-stencil-regular", sans-serif;
+    margin: 5px;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+#cover {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*Navigation Bar*/
+#nav {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    position: relative;
+    display: block;
+    z-index: 10;
+    font-family: inherit;
+    font-size: 0px;
+    /*IMP*/
+    border: 1px solid goldenrod;
+}
+
+
+.navDiv {
+    font-size: 1.4rem;
+    display: inline-block;
+    position: relative;
+    inline-size: 25%;
+    height: max-content;
+    /*IMP*/
+    vertical-align: text-top;
+    /*IMP*/
+    border: 10px solid gold;
+    box-sizing: border-box;
+
+
+}
+
+.navDiv:hover,
+.navDiv:focus-visible {
+    border: 10px;
+    border-style: solid;
+    border-top-color: rgb(255, 239, 148);
+    border-bottom-color: rgb(110, 94, 0);
+    border-right-color: goldenrod;
+    border-left-color: goldenrod;
+    background-color: rgb(255, 230, 0);
+    font-size: 1.6rem;
+}
+
+.navDiv:active {
+    border: 10px;
+    border-style: solid;
+    border-top-color: rgb(110, 94, 0);
+    border-bottom-color: rgb(255, 239, 148);
+    border-right-color: goldenrod;
+    border-left-color: goldenrod;
+    background-color: gold;
+    font-size: 1.2rem;
+}
+
+.navSpan {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+
+    line-height: 1.5rem;
+    /*IMP*/
+}
+
+
+
+
+
+
+
